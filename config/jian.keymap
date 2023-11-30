@@ -69,16 +69,16 @@
 //       |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
-   &reset &bootloader  &none        &none        &none        &none        &bt BT_CLR             &bt BT_CLR        &none        &none        &none        &none         &bootloader &reset
+   &sys_reset &bootloader  &none        &none        &none        &none        &bt BT_CLR             &bt BT_CLR        &none        &none        &none        &none         &bootloader &sys_reset
           &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &none
           &none        &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &none
                                                                     &trans &none &trans   &trans &none &trans
                         >;
                 };
-        layer_4 {
+        mouse_layer {
             bindings = <
-&trans  &none   &trans   &trans         &mmv MOVE_UP    &mwh SCROLL_UP    &trans    &trans  &trans     &trans     &trans     &trans           &none   &trans
-        &trans  &trans   &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &none   &trans   &trans         &trans          &trans    &trans    &trans  &trans     &trans     &trans     &trans           &none   &trans
+        &trans  &trans   &trans         &trans          &trans   &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
         &trans  &trans   &trans         &trans          &mwh SCROLL_DOWN  &trans    &trans  &trans     &trans     &trans     &trans           &trans
                                         &trans          &trans            &trans    &trans  &trans     &trans
             >;
