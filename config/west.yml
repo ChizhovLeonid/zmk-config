@@ -2,14 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: ftc
-      url-base: https://github.com/ftc
-    - name: leo
-      url-base: https://github.com/ChizhovLeonid
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+
   projects:
     - name: zmk
-      remote: leo
-      revision: main
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
       import: app/west.yml
   self:
     path: config
