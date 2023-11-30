@@ -4,9 +4,11 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ftc
       url-base: https://github.com/ftc
+    - name: leo
+      url-base: https://github.com/ChizhovLeonid
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: leo
       revision: main
       import: app/west.yml
   self:
