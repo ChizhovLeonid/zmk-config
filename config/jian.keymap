@@ -65,10 +65,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &tog 4           &mt RCTRL K_APP
-        &kp LWIN         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                     &trans     &trans     &lt ADJ RET     &lt ADJ ESC   &trans    &trans
+&trans  &none            &none  &none  &none   &kp K_VOLUME_UP    &kp K_NEXT          &none        &kp HOME  &kp PSCRN  &kp PG_UP  &none   &kp CAPS         &trans
+        &mt LCTRL EQUAL  &none  &none  &none   &kp K_MUTE         &kp K_PLAY_PAUSE    &none        &kp LEFT  &kp UP     &kp RIGHT  &tog 4  &mt RCTRL K_APP
+        &kp LWIN         &none  &none  &none   &kp K_VOLUME_DOWN  &kp K_PREVIOUS      &none        &kp END   &kp DOWN   &kp PG_DN  &none   &trans
+                                       &trans  &trans             &lt ADJ RET         &lt ADJ ESC  &trans    &trans
             >;
         };
 
@@ -89,10 +89,10 @@
 
         mouse_layer {
             bindings = <
-&none  &none  &none  &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &mwh SCROLL_UP      &none  &none      &none      &none      &none   &none  &none
-       &none  &none  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN    &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 4  &none
-       &none  &none  &none             &none           &none              &none               &none  &none      &none      &none      &none   &none
-                                       &none           &none              &none               &none  &none      &none
+&none  &none      &none  &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &mwh SCROLL_UP      &none    &none          &none       &none      &none   &none  &none
+       &kp LCTRL  &none  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN    &none    &mkp LCLK      &mkp MCLK   &mkp RCLK  &tog 4  &none
+       &kp LALT   &none  &none             &none           &none              &none               &none    &none          &none       &none      &none   &none
+                                           &kp TAB         &kp LEFT_SHIFT     &kp ENTER           &kp ESC  &kp BACKSPACE  &kp DELETE
             >;
         };
     };
